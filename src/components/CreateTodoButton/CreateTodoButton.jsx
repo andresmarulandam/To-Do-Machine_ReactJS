@@ -4,7 +4,9 @@ import './styles.css';
 function CreateTodoButton() {
   return (
     <div>
-      <button className="createTodoButton">+</button>
+      <button className="createTodoButton" onClick={''}>
+        +
+      </button>
     </div>
   );
 }
