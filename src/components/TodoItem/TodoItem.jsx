@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaCheck } from 'react-icons/fa';
+import { MdDeleteForever } from 'react-icons/md';
 import './styles.css';
 
 function TodoItem({ text, completed, onComplete, onDelete }) {
@@ -8,13 +10,13 @@ function TodoItem({ text, completed, onComplete, onDelete }) {
         className={`Icon Icon-check ${completed && 'Icon-check--active'}`}
         onClick={onComplete}
       >
-        V
+        <FaCheck />
       </span>
       <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>
         {text}
       </p>
       <span className="Icon Icon-delete" onClick={onDelete}>
-        X
+        <MdDeleteForever />
       </span>
     </li>
   );
